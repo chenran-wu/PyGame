@@ -17,7 +17,7 @@ playerY = 480
 playerX_change = 0
 
 enemyImg = pygame.image.load('enemy.png')
-enemyX = random.randint(0, 800)
+enemyX = random.randint(0, 735)
 enemyY = random.randint(50, 250)
 enemyX_change = 4
 enemyY_change = 40
@@ -99,9 +99,9 @@ while running:
         bullet_state = "ready"
         score += 1
         print(score)
-        enemyX = random.randint(0, 800)
+        enemyX = random.randint(0, 735)
         enemyY = random.randint(50, 250)
-        
+
     player(playerX, playerY)
     enemy(enemyX, enemyY)
     pygame.display.update()
